@@ -224,8 +224,6 @@ elseif ( $_REQUEST['modfunc'] === 'upload' )
 					$buttons.css('pointer-events', '').attr('disabled', false).val( buttonTxt );
 					return false;
 				}).insertAfter( $buttons );
-
-				return false;
 			});
 		});
 		</script>
