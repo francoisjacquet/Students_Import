@@ -53,8 +53,17 @@ if ( $_REQUEST['modfunc'] === 'upload' )
 
 	if ( $error )
 	{
-		unset( $_REQUEST['modfunc'] );
-		unset( $_SESSION['_REQUEST_vars']['modfunc'] );
+		if ( function_exists( 'RedirectURL' ) )
+		{
+			// @since 3.3.
+			RedirectURL( 'modfunc' );
+		}
+		else
+		{
+			// @deprecated.
+			unset( $_REQUEST['modfunc'] );
+			unset( $_SESSION['_REQUEST_vars']['modfunc'] );
+		}
 	}
 }
 // Import.
@@ -89,8 +98,18 @@ elseif ( $_REQUEST['modfunc'] === 'import' )
 		unlink( $_SESSION['StudentsImport.php']['csv_file_path'] );
 	}
 
-	unset( $_REQUEST['modfunc'] );
-	unset( $_SESSION['_REQUEST_vars']['modfunc'] );
+	if ( function_exists( 'RedirectURL' ) )
+	{
+		// @since 3.3.
+		RedirectURL( 'modfunc' );
+	}
+	else
+	{
+		// @deprecated.
+		unset( $_REQUEST['modfunc'] );
+		unset( $_SESSION['_REQUEST_vars']['modfunc'] );
+	}
+
 	unset( $_SESSION['StudentsImport.php']['csv_file_path'] );
 }
 
