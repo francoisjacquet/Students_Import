@@ -33,7 +33,7 @@ You have to create the file filled with information (or take it from another dat
 
 ## Grade Levels
 
-_In case you choose a column from your file_, the detection is based on the Grade Level **title** (see _School Setup > Grade Levels_), examples using the default Grade Levels coming with RosarioSIS:
+_In case you choose to import grade levels from a column of your CSV or Excel file_, the detection is based on the Grade Level **title** (see _School Setup > Grade Levels_). Here are examples using the default Grade Levels coming with RosarioSIS:
 
 - `Kindergarten` => detected
 - `2nd` => detected
