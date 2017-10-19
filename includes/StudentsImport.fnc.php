@@ -540,7 +540,7 @@ function _insertStudent( $student_fields )
 				$fields .= '"' . mb_strtolower( $field ) . '",';
 			}
 
-			$values .= "'" . $value . "',";
+			$values .= "'" . DBEscapeString( $value ) . "',";
 		}
 	}
 
