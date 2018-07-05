@@ -1,3 +1,8 @@
+GitLab
+------
+
+RosarioSIS code is now hosted at [**GitLab**](https://gitlab.com/francoisjacquet/Students_Import)!
+
 Students Import Module
 ======================
 
